@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fongo_upc"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="YOYO TEST UPC"
+        android:fontFamily="@font/babaca"
+        android:layout_alignParentTop="true"
+        android:textColor="#BBDEFB"
+        android:id="@+id/txtTitulo"
+        android:gravity="center"
+        android:layout_marginTop="200dp"
+        android:textSize="80sp">
+    </TextView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/txtTitulo"
+        android:scaleType="fitXY"
+        android:layout_marginHorizontal="20dp"
+        android:id="@+id/imgLogoDeporte"
+        android:src="@drawable/logo_deporte">
+    </ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/imgLogoDeporte"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btnLogin"
+            android:text="Iniciar Sesiòn"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:background="@drawable/marco_boton"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            />
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_marginTop="5dp"
+            android:text="Registrase"
+            android:layout_below="@id/btnLogin"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:background="@drawable/marco_boton"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            />
+    </LinearLayout>
+</RelativeLayout>
